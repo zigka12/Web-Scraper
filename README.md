@@ -4,7 +4,7 @@ A fully autonomous web-browsing assistant that performs intelligent query-driven
 
 ---
 
-## Features
+## Workflow description
 
 - Automated Web Search — Queries Tavily’s web search API for relevant starting URLs.
 - Full Page Screenshots — Uses Selenium + undetected-chromedriver to capture full-page screenshots as the page scrolls.
