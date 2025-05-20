@@ -79,13 +79,11 @@ import openai
 from langchain.chat_models import ChatOpenAI
 from dotenv import load_dotenv
 import os
-import streamlit as st
 
 
-# Priority: st.secrets (on Streamlit Cloud), fallback to local .env
-
-api_key = st.secrets["OPENAI_API_KEY"]
-tavily_key = st.secrets["TAV_API_KEY"]
+load_dotenv()
+api_key = os.getenv("OPENAI_API_KEY")
+tavily_key = os.getenv("TAV_API_KEY")
 llm = ChatOpenAI(
     openai_api_key=api_key,
     model_name="gpt-4o",
